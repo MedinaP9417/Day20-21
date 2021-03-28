@@ -170,10 +170,6 @@ const Keyboard = {
     },
 };
 
-// function myFunction(rock) {
-//     document.getElementById("virtual-keyboard").innerHTML += rock;
-//     console.log(rock);
-// };
 
 window.addEventListener("DOMContentLoaded", function() {
     Keyboard.init();
