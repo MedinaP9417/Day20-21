@@ -52,7 +52,7 @@ const Keyboard = {
 
         // Creates HTML for an icon
         const createIconHTML = (icon_name) => {
-            return `<i class="material-icons">${icon - name}</i>`;
+            return `<i class="material-icons">${icon_name}</i>`;
 
         };
         keyLayout.forEach(key => {
@@ -170,12 +170,12 @@ const Keyboard = {
     },
 };
 
+// function myFunction(rock) {
+//     document.getElementById("virtual-keyboard").innerHTML += rock;
+//     console.log(rock);
+// };
+
 window.addEventListener("DOMContentLoaded", function() {
     Keyboard.init();
-    // Keyboard.open("decode", function(currentValue) {
-    //         console.log("value changed! here it is: " + currentValue);
-    //     },
-    //     function(currentValue) {
-    //         console.log("keyboard closed! Finishing value: " + currentValue);
-    //     });
+
 });
