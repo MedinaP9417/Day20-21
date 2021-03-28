@@ -1,0 +1,123 @@
+/* body {} */
+
+h2 {
+    color: aquamarine;
+    margin-left: 0%;
+    clear: both;
+    z-index: 1;
+    position: fixed;
+    margin-top: 0.5%;
+    font-size: medium;
+}
+
+.virtual-keyboard {
+    /* width: 800px;
+    height: 400px;
+    border: 5px blue;
+    align-items: center; */
+    position: fixed;
+    align-items: center;
+    width: 40%;
+    padding: 5px 100px;
+    background: #f0f0f5;
+    border: 5px rgb(31, 31, 231);
+    margin-left: 22%;
+    height: 400px;
+    font-size: larger;
+    color: aqua;
+    font-size: larger;
+    text-align: start;
+    grid-row-start: span;
+    padding-bottom: 20px;
+    margin-top: 0;
+}
+
+.keyboard {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #000010;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: bottom 0.4s;
+    border-block-style: 10px blue;
+}
+
+.keyboard--hidden {
+    bottom: -100%;
+}
+
+.keyboard__keys {
+    text-align: center;
+}
+
+.keyboard__key {
+    height: 45px;
+    width: 60px;
+    max-width: 100px;
+    margin: 2px;
+    border-radius: 4px;
+    border: 10px whitesmoke;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+
+.keyboard__key:active {
+    background: rgba(255, 255, 255, 0.12);
+}
+
+.keyboard__key--extra-wide {
+    width: 76%;
+    max-width: 700px;
+}
+
+.keyboard__key--wide {
+    width: 20%;
+}
+
+.keyboard__key--wide-3 {
+    width: 163px;
+    max-width: 700px;
+}
+
+.keyboard__key--small {
+    width: 40px;
+}
+
+.keyboard__key--activatable::after {
+    content: '';
+    top: 10px;
+    right: 10px;
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+
+.keyboard__key--active::after {
+    background: #08ff00;
+}
+
+
+/* .keyboard__key--wide-2 {
+    height: 90px;
+    margin-bottom: 0;
+} */
+
+
+/* .q {
+    margin-right: 100px;
+} */
