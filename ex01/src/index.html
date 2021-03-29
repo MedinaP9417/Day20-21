@@ -9,66 +9,43 @@
     <link rel="shortcut icon" href="/assets/favicon.ico">
     <link rel="stylesheet" href="/assets/dcode.css">
     <link rel="stylesheet" href="index.css">
-    
+
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 
 <body>
 
-    <h2>qwerty keyboard</h2>
-   
-    <h2>QWERTY keyboard</h2>
-    <form>
-        <div>
-          
-            <textarea class="virtual-keyboard">TEXT AREA</textarea>
-        </div>
 
+    <h2>QWERTY keyboard</h2> 
+
+        <textarea id="virtual-keyboard"></textarea>
 
         <div class="keyboard">
             <div class="keyboard__keys">
-                <!-- <button type="button" class="keyboard__key">a</button>
-        <button type="button" class="keyboard__key" class="keyboard__key--wide">
-                <i class="material-icons">Back Space</i>
-            </button>
-            <button type="button" class="keyboard__key" class="keyboard__key--extra-wide">
-                <i class="material-icons ">Space</i>
-            </button>
-            <button type="button" class="keyboard__key" class="keyboard__key--wide keyboard__key--activable">
-                <i class="material-icons ">Caps Lock</i>
-            </button>
-            <button type="button" class="keyboard__key" class="keyboard__key--wide keyboard__key--activable">
-                <i class="material-icons ">Shift</i>
-            </button>
-            <button type="button" class="keyboard__key" class="keyboard__key keyboard__key--wide keyboard__key--dark">
-                <i class="material-icons ">OK</i>
-            </button>
-
-        </div>  -->
 
                 <main>
 
                     <div>
-                        <button type="button" class="keyboard__key" value="1">1</button><button type="button" class="keyboard__key">2</button><button type="button" class="keyboard__key">3</button><button type="button" class="keyboard__key">4</button><button type="button" class="keyboard__key">5</button><button type="button" class="keyboard__key">6</button><button type="button" class="keyboard__key">7</button><button type="button" class="keyboard__key">8</button><button type="button" class="keyboard__key">9</button><button type="button" class="keyboard__key">0</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--wide-2">Back Space</button>
+                        <button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="1">1</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="2">2</button><button type="button" class="keyboard__key onclick="myFunction(this.value)" value="3">3</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="4">4</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="5">5</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="6">6</button><button type="button" class="keyboard__key onclick="myFunction(this.value)" value="7">7</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="8">8</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="9">9</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="0">0</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--wide-2" onclick="myFunction(this.value)" value="&#9224;">Back Space</button>
                     </div>
                     <div class="q">
-                        <button type="button" class="keyboard__key">q</button><button type="button" class="keyboard__key">w</button><button type="button" class="keyboard__key">e</button><button type="button" class="keyboard__key">r</button><button type="button" class="keyboard__key">t</button><button type="button" class="keyboard__key">y</button><button type="button" class="keyboard__key">u</button><button type="button" class="keyboard__key">i</button><button type="button" class="keyboard__key">o</button><button type="button" class="keyboard__key">p</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--active">Enter</button>
+                        <button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="q">q</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="w">w</button><button type="button" class="keyboard__key onclick="myFunction(this.value)" value="e">e</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="r">r</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="t">t</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="y">y</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="u">u</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="i">i</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="o">o</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="p">p</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--active" onclick="myFunction(this.value)" value="&#9166;">Enter</button>
                     </div>
                     <div>
-                        <button type="button" class="keyboard__key">a</button><button type="button" class="keyboard__key">s</button><button type="button" class="keyboard__key">d</button><button type="button" class="keyboard__key">f</button><button type="button" class="keyboard__key">g</button><button type="button" class="keyboard__key">h</button><button type="button" class="keyboard__key">j</button><button type="button" class="keyboard__key">k</button><button type="button" class="keyboard__key">l</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--wide-3 keyboard__key--active::afterkeyboard__key--active::after keyboard__key--activable">Caps Lock</button>
+                        <button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="a">a</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="s">s</button><button type="button" class="keyboard__key">d</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="f">f</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="g">g</button><button type="button" class="keyboard__key onclick="myFunction(this.value)" value="h">h</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="j">j</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="k">k</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="l">l</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--wide-3 keyboard__key--active afterkeyboard__key--active keyboard__key--activable">Caps Lock</button>
                     </div>
                     <div>
-                        <button type="button" class="keyboard__key">z</button><button type="button" class="keyboard__key">x</button><button type="button" class="keyboard__key">c</button><button type="button" class="keyboard__key">v</button><button type="button" class="keyboard__key">b</button><button type="button" class="keyboard__key">n</button><button type="button" class="keyboard__key">m</button><button type="button" class="keyboard__key">-</button><button type="button" class="keyboard__key">_</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--wide-3 keyboard__key--activable">Shift</button>
+                        <button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="z">z</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="x">x</button><button type="button" class="keyboard__key onclick="myFunction(this.value)" value="c">c</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="v">v</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="b">b</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="n">n</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="m">m</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="-">-</button><button type="button" class="keyboard__key" onclick="myFunction(this.value)" value="_">_</button><button type="button" class="keyboard__key keyboard__key--wide keyboard__key--wide-3 keyboard__key--activable" onclick="myFunction(this.value)" value="&#15;"">Shift</button>
                     </div>
                     <div>
-                        <button type="button" class="keyboard__key keyboard__key--extra-wide">Space</button><a href="# " role="alert "><button type="button" class="keyboard__key keyboard__key--small">OK</button></a>
+                        <button type="button" class="keyboard__key keyboard__key--extra-wide" onclick="myFunction(this.value)" value=" ">Space</button><button role="alertdialog" type="button" class="keyboard__key keyboard__key--small" onclick"myFunction(this.value)" value="&#9094;"">OK</button>
                     </div>
 
                 </main>
             </div>
         </div>
     </form>
-    <script src="../src/index.js"></script>
+    <script src="index.js "></script>
 </body>
 
 </html>
